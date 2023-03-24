@@ -2,9 +2,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/main.js',
   output: {
-    filename: 'index.js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
@@ -12,5 +12,8 @@ module.exports = {
       template: './src/index.html',
       scriptLoading: 'blocking'
     })
-  ]
+  ],
+  module: {
+    rules: [{ test: /\.css$/, use: ['style-loader', 'css-loader'] }]
+  }
 };
