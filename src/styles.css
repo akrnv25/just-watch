@@ -68,17 +68,32 @@ Color scheme:
   color: #4E7779;
   outline: none;
   background: #F4F4E9;
-  border: none;
+  border: 1px solid #C3BA9B;
   box-shadow: none;
   padding: 4px 12px;
 }
 
+.search__input::placeholder {
+  color: #C3BA9B;
+}
+
 .search__button {
-  background: #C3BA9B;
-  color: #7E6D53;
+  background: #7E6D53;
+  color: #F4F4E9;
   padding: 4px 12px;
-  border: none;
   cursor: pointer;
+  height: 40px;
+  border: 1px solid #C3BA9B;
+}
+
+.reload-button {
+  background: #7E6D53;
+  color: #F4F4E9;
+  padding: 4px 12px;
+  cursor: pointer;
+  height: 40px;
+  border: 1px solid #C3BA9B;
+  width: 100%;
 }
 
 #yohoho {
