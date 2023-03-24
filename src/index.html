@@ -7,7 +7,32 @@
   <title>Just Watch</title>
 </head>
 <body>
-<div id="yohoho" data-kinopoisk="4443734"></div>
-<script src="//yohoho.cc/yo.js"></script>
+<div class="layout">
+  <div class="nav">
+    <h1 class="title">Just Watch</h1>
+
+    <label>Введите ID (Кинопоиск):</label>
+    <input type="text" class="id-input">
+
+    <label>Выберите плеер:</label>
+    <select name="players" class="player-select">
+      <option value="videocdn">videocdn</option>
+      <option value="iframe">iframe</option>
+      <option value="kodik">kodik</option>
+      <option value="collaps">collaps</option>
+      <option value="hdvb">hdvb</option>
+      <option value="bazon">bazon</option>
+      <option value="ustore">ustore</option>
+      <option value="alloha">alloha</option>
+      <option value="pleer">pleer</option>
+      <option value="videospider">videospider</option>
+    </select>
+
+    <button type="button" class="watch-button">Смотреть</button>
+    <button type="button" class="reload-button">Обновить страницу</button>
+  </div>
+  <div class="content">
+  </div>
+</div>
 </body>
 </html>
