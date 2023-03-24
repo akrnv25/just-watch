@@ -53,17 +53,8 @@ Color scheme:
   text-align: center;
 }
 
-.search {
-  margin-bottom: 24px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-.search__input {
+.id-input {
   width: 100%;
-  margin-right: 10px;
   height: 40px;
   color: #4E7779;
   outline: none;
@@ -71,19 +62,34 @@ Color scheme:
   border: 1px solid #C3BA9B;
   box-shadow: none;
   padding: 4px 12px;
+  margin-bottom: 12px;
 }
 
-.search__input::placeholder {
+.id-input::placeholder {
   color: #C3BA9B;
 }
 
-.search__button {
+.player-select {
+  width: 100%;
+  height: 40px;
+  color: #4E7779;
+  outline: none;
+  background: #F4F4E9;
+  border: 1px solid #C3BA9B;
+  box-shadow: none;
+  padding: 4px 12px;
+  margin-bottom: 12px;
+  appearance: none;
+}
+
+.watch-button {
   background: #7E6D53;
   color: #F4F4E9;
   padding: 4px 12px;
   cursor: pointer;
   height: 40px;
   border: 1px solid #C3BA9B;
+  margin-bottom: 12px;
 }
 
 .reload-button {
@@ -94,6 +100,7 @@ Color scheme:
   height: 40px;
   border: 1px solid #C3BA9B;
   width: 100%;
+  margin-bottom: 12px;
 }
 
 #yohoho {
